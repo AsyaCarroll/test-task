@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test task</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!--Поменять-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header__content_conteiner">
+    <div class="container"> <!-- Поменять наименование класса на более конкретизированное -->
+        <div class="header__content_conteiner"> <!--Элемент должен быть частью блока (именование класса)-->
             <img src="https://picsum.photos/id/1/135/30" alt="#" class="header__logo">
             <div class="header__icon"></div>
         </div>
         <div class="header__content">
-            <form action="#" method="get" class="header__find">
-                <button type="submit" class="header__find_bytton"></button>
-                <input name="s" placeholder="Найти..." type="search">
+            <form action="#" method="get" class="header__find"> <!--скорее всё таки search, а не find-->
+                <button type="submit" class="header__find_bytton"></button> <!--Должно быть find-button (тире вместо пробела, андерскор означает начало имени модификатора)-->
+                <input name="s" placeholder="Найти..." type="search"> <!--name-->
             </form>
             <div class="header__profile">
                 <div class="header__profile_container">
@@ -34,8 +34,8 @@
     <div class="content">
         <h1 class="content__title">НАШИ ПАРТНЁРЫ</h1>
         <div class="content__partners">
-            <div class="content__partner-card-1">
-                <img src="https://picsum.photos/id/1/200/90" alt="#" class="content__partner-card_logo">
+            <div class="partner-card"> <!--Это блок (неверное именование класса) -->
+                <img src="https://picsum.photos/id/1/200/90" alt="#" class="partner-card__logo">
             </div>
             <div class="content__partner-card-2">
                 <img src="https://picsum.photos/id/1/200/90" alt="#" class="content__partner-card_logo">
@@ -49,7 +49,7 @@
             <div class="content__partner-card-5">
                 <img src="https://picsum.photos/id/1/200/90" alt="#" class="content__partner-card_logo">
             </div>
-            <div class="content__partner-card-6">
+            <div class="content__partner-card-6 red-content">
                 <img src="https://picsum.photos/id/1/200/90" alt="#" class="content__partner-card_logo">
             </div>
             <div class="content__partner-card-7">
@@ -57,11 +57,8 @@
             </div>
             <div class="content__partner-card-empty-1"></div>
             <div class="content__partner-card-empty-2"></div>
-        </div>
     </div>
-
-
-
+    </div>
 </body>
 
 </html>
