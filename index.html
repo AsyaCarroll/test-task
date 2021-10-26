@@ -12,19 +12,19 @@
 
 <body>
     <div class="header">
-        <div class="icons"> <!-- Тут всё верно, icons - это блок, хотя мог бы быть и элементом -->
+        <div class="icons">
             <img src="https://picsum.photos/id/1/135/30" alt="#" class="icons__logo">
             <img src="https://picsum.photos/id/1/24/24" alt="#" class="icons__icon">
         </div>
-        <div class="content"> <!-- Это элемент header__content -->
-            <form action="#" method="get" class="search"> <!-- А это блок, тут всё правильно -->
+        <div class="header__content">
+            <form action="#" method="get" class="search">
                 <button type="submit" class="search__button"> <img src="https://picsum.photos/id/1/24/24" alt="#"> </button>
                 <input class="search__input" placeholder="Найти..." type="search">
             </form>
             <div class="profile">
-                <div class="avatar-nick"> <!-- Скорее это просто блок avatar  -->
-                    <p class="avatar-nick__nickname">Константин</p>
-                    <img src="https://picsum.photos/id/1/40/40" alt="#" class="avatar-nick__avatar">
+                <div class="avatar">
+                    <p class="avatar__nickname">Константин</p>
+                    <img src="https://picsum.photos/id/1/40/40" alt="#" class="avatar__avatar">
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
 
     <div class="content">
         <h2 class="content__title">НАШИ ПАРТНЁРЫ</h2>      
-        <div class="partners"> <!-- Элемент, значит точно content__..., лучше content__body, т.к. в теории могут быть не только партнёры -->
+        <div class="content__body">
             <div class="partner-card">
                 <img src="https://picsum.photos/id/1/200/90" alt="#" class="partner-card__logo">
             </div>
